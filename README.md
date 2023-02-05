@@ -15,7 +15,7 @@ SELECT district FROM address WHERE district LIKE 'k%a' INTERSECT SELECT district
 Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года **включительно** и стоимость которых превышает 10.00.
 
 ```
-SELECT * FROM payment WHERE payment_date BETWEEN '2005-06-15' AND '2005-06-19' AND amount > 10;
+mysql> SELECT * FROM payment WHERE DATE(payment_date) BETWEEN '2005-06-15' AND '2005-06-18' AND amount > 10;
 ```
 
 ### Задание 3
