@@ -35,7 +35,7 @@ SELECT * FROM rental ORDER BY rental_date DESC limit 10;
 - замените буквы 'll' в именах на 'pp'.
 
 ```
-SELECT LOWER(REPLACE(first_name, 'll', 'pp')), LOWER(last_name) FROM customer WHERE first_name = 'Kelly' or first_name = 'Willie';
+SELECT LOWER(REPLACE(first_name, 'LL', 'PP')), LOWER(last_name) FROM customer WHERE first_name = 'Kelly' or first_name = 'Willie';
 ```
 
 ## Дополнительные задания (со звёздочкой*)
